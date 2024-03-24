@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 
+
 const port = 3000
 
 const { db } = require("./configs")
@@ -24,6 +25,7 @@ app.post('/create', async(req, res)=>{
     const data = req.body
     console.log('req.body', data)
     const { name } = req.body
+    console.log('what is req.headers', req.headers)
 
     const User = db.collection('Users').doc('name')
     const response = await User.set({
