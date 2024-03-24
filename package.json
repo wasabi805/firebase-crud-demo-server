@@ -1,0 +1,22 @@
+{
+  "name": "demo-db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "dev": "npx nodemon"
+  },
+  "author": "Tim Ocampo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "firebase": "^10.9.0",
+    "firebase-admin": "^12.0.0"
+  },
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
