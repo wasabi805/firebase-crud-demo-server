@@ -14,6 +14,10 @@
   },
   "main": "index.js",
   "dependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.3",
     "cors": "^2.8.5",
     "express": "^4.19.1",
     "firebase-admin": "^11.8.0",

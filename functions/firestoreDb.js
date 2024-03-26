@@ -1,6 +1,6 @@
 // see: https://firebase.google.com/docs/firestore/quickstart#node.js_1
-const { initializeApp, cert } = require('firebase-admin/app');
-const { getFirestore, } = require('firebase-admin/firestore');
+import { initializeApp, cert } from 'firebase-admin/app';
+import { getFirestore, } from 'firebase-admin/firestore';
 const { privateKey } = JSON.parse(process.env.PRIVATE_KEY)
 
 const configs = {
@@ -23,5 +23,6 @@ initializeApp({
 
 const db = getFirestore();
 
+export default db
 
-module.exports = {db};
+
